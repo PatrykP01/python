@@ -41,6 +41,19 @@ if a==4:
         print("coś poszło nie tak")
     else:
         print((b**2)*math.pi)
+if a==5:
+    b=int(input("Podaj promień podstawy"))
+    if b<=0:
+        print("coś poszło nie tak")
+    else:
+        print((((b**3)*math.pi)*4)/3)
+if a==6:
+    b=int(input("Podaj bok"))
+    if b<=0:
+        print("coś poszło nie tak")
+    else:
+        print(b**3)
+
 
 
         
