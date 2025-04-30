@@ -1,5 +1,3 @@
-#konwenter długości
-
 a=int(input("Co chcesz przekształcać\n"
     "1-centymetry\n"
     "2-metry\n"
@@ -53,7 +51,7 @@ if a==2:
             print(number * 0.001)
         except ValueError:
             b=int(input("Podaj ile masz centymetrów ma być liczba całkowita:"))
-        print(b*0.001)
+            print(b*0.001)
 if a==3:
         try:
             b= input("Podaj ile masz centymetrów ma być liczba całkowita: ")
