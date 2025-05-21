@@ -26,3 +26,4 @@ try:
         print(f"{a} {b} to {c}: {f}")
 except ValueError:
         print("Wprowadź poprawną wartość liczbową.")
+        
