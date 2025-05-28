@@ -1,5 +1,5 @@
 
-def ok(a,b, c):
+def liczba(a,b, c):
     # Wszystkie jednostki w metrach
     jednostki = {
         "mm": 0.001,
@@ -18,12 +18,16 @@ def ok(a,b, c):
     d = a * jednostki[b]
     e = d / jednostki[c]
     return e
+
 try:
         a = float(input("Podaj wartość do przekształcenia: "))
-        b= input("Podaj jednostkę, z której chcesz przekształcić (np. km, m, ft, in, yd, mi,): ").strip()
-        c = input("Podaj jednostkę, na którą chcesz przekształcić (np. km, m, ft, in, jd, mi): ").strip()
-        f = ok(a, b, c)
-        print(f"{a} {b} to {c}: {f}")
+        if a<=0:
+              print("coś poszło nie tak")
+        else:
+            b= input("Podaj jednostkę, z której chcesz przekształcić (np. km, m, ft, in, yd, mi,): ").strip()
+            c = input("Podaj jednostkę, na którą chcesz przekształcić (np. km, m, ft, in, jd, mi): ").strip()
+            f = liczba(a, b, c)
+            print(f"{a} {b} to {c}: {f}")
 except ValueError:
         print("Wprowadź poprawną wartość liczbową.")
         

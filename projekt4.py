@@ -13,15 +13,18 @@ def password(d=12,b=True,c=True):
     return haslo    
 if __name__=="__main__":
     d=int(input("Podaj długość hasła"))
-    b=input("Czy uzywać cyfr?(tak/nie):").strip().lower()
-    c=input("Czy uzywać znaków specjalnych(tak/nie):").strip().lower()
-    values=["tak", "nie"]
-    print("Coś poszło nie tak!")
-    while b not in values or c not in values:
+    if d<=0:
+        print("coś poszło nie tak")
+    else:
         b=input("Czy uzywać cyfr?(tak/nie):").strip().lower()
         c=input("Czy uzywać znaków specjalnych(tak/nie):").strip().lower()
-    haslo=password(d,b,c)
-    print(f"Twoje wygenerowane hasło to{haslo}")
+        values=["tak", "nie"]
+        print("Coś poszło nie tak!")
+        while b not in values or c not in values:
+            b=input("Czy uzywać cyfr?(tak/nie):").strip().lower()
+        c=input("Czy uzywać znaków specjalnych(tak/nie):").strip().lower()
+        haslo=password(d,b,c)
+        print(f"Twoje wygenerowane hasło to{haslo}")
 
 
 
