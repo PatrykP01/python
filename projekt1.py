@@ -14,8 +14,8 @@ if a in lista:
         else:
             print(((b**2)*c)/3)
     if a==2:
-        b=int(input("Podaj długość podstawy "))
-        c=int(input("Podaj długość drugiej bok podstawy  "))
+        b=int(input("Podaj długość pierwszego boku podstawy "))
+        c=int(input("Podaj długość drugiej boku podstawy  "))
         d=int(input("Podaj wysokość"))
         if b<=0:
             print("coś poszło nie tak")
@@ -42,7 +42,7 @@ if a in lista:
         elif c<=0:
             print("coś poszło nie tak")
         else:
-            print((b**2)*math.pi)
+            print(((b**2)*math.pi)*c)
     if a==5:
         b=int(input("Podaj długość promienia podstawy"))
         if b<=0:
