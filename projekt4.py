@@ -2,7 +2,7 @@ import random
 import string
 
 
-def password(d=12,b=True,c=True):
+def password(d=12,e= True,f=True,b=True,c=True):
     a =""
     if e:
         a+= string.ascii_lowercase
